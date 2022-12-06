@@ -8,9 +8,9 @@ def new_input():
 
 
 def cash_string(new_string: str):
-    result = re.match(r'(\w{1,2})', new_string)
+    result = re.findall(r'(([\w+])\2)', new_string)
     if result:
-        print(result.group())
+        print(result)
     pass
 
 
